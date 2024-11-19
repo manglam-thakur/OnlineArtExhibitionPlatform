@@ -1,5 +1,11 @@
 package com.onlineart.exhibition.dao;
 
-public class ArtworkDAO {
+import com.onlineart.exhibition.model.Artwork;
+import java.util.List;
 
+public interface ArtworkDAO {
+    void save(Artwork artwork);
+    void delete(Long artworkId);
+    Artwork findById(Long artworkId);
+    List<Artwork> findAll();
 }
