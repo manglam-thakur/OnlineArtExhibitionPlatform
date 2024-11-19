@@ -1,12 +1,33 @@
-package com.onlineart.exhibition.dao;
+package com.onlineart.exhibition.model;
 
-import com.onlineart.exhibition.model.Artwork;
-import java.util.List;
+public class Artwork {
+    private Long id;
+    private String name;
+    private String description;
 
-public interface ArtworkDAO {
-    void save(Artwork artwork);
-    void delete(Long artworkId);
-    Artwork findById(Long artworkId);
-    List<Artwork> findAll();
+    // Getters and Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
-
